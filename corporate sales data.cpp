@@ -17,6 +17,10 @@ void printCompanyDivision(CompanyDivision companydivision);
 
 int main() 
 {
+	int branch;
+	cout << "Choose branch: ";
+	cin >> branch;
+	
 	CompanyDivision east;
 	east.DivisionName = "East";
 	cout << "Type first quarter: ";
@@ -29,6 +33,7 @@ int main()
 	cin>>east.FourthQuarter;
 	east.TotalAnnualSales = east.FirstQuarter+east.SecondQuarter+east.ThirdQuarter+east.FourthQuarter;
 	east.AverageQuarterlySales = east.TotalAnnualSales/4;
+	printCompanyDivision(east);
 	
 	return 0;
 }
