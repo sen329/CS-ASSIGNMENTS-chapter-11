@@ -17,13 +17,13 @@ struct WeatherData {
 int main()
 {
 	WeatherData month[12];
-	string mth[12]={"January","February","March","April","May","June","July","August","September","October","November","December"};
+	enum mth {JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER};
 	float total[12];
 	float totalyearly = 0.0;
-	for(int i=0; i<12; i++){
-		month[i].Month=mth[i];
+	for(int i=JANUARY; i<DECEMBER; i++){
+
 		
-		cout << "Total Rainfall "<< month[i].Month << " :"<<endl;
+		cout << "Total Rainfall for month "<< i +1  << " :"<<endl;
 		cin >> month[i].TotalRainfall;
 		cout << "High Temperature: "<<endl;
 		cin >> month[i].HighTemperature;
