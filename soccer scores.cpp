@@ -24,8 +24,8 @@ int main()
 		cin >> player.PointsScored;
 	}
 	
-	cout << "Player" <<"Number"<<"Points scored"<<"\t" "\t" "\t"<<endl;
-	cout << player.PlayerName<<player.PlayerNumber<<player.PointsScored<<"\t" "\t" "\t"<<endl;
+	cout << "Player \t" <<"Number \t"<<"Points scored \t"<<endl;
+	cout << player.PlayerName<<"\t"<<player.PlayerNumber<<"\t"<<player.PointsScored<<"\t" <<endl;
 	
 	
 }
